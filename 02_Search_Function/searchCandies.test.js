@@ -26,31 +26,31 @@ describe('searchCandies', () => {
   it('takes a string and a high value max price integer', () => {
     result = searchCandies('Ma', 10);
     console.log(result);
-    expect(result).toEqual[ 'Mars', 'Maltesers' ];
+    expect(result).toEqual([ 'Mars', 'Maltesers' ]);
   });
 
   it('takes a string and a low value max price integer', () => {
     result = searchCandies('Ma', 2);
     console.log(result);
-    expect(result).toEqual[ 'Mars' ];
+    expect(result).toEqual([ 'Mars' ]);
   });
 
   it('takes a string and a high value max price integer', () => {
     result = searchCandies('S', 10);
     console.log(result);
-    expect(result).toEqual[ 'Skitties', 'Skittles', 'Starburst' ];
+    expect(result).toEqual([ 'Skitties', 'Skittles', 'Starburst' ]);
   });
 
   it('takes a string and a low value max price integer', () => {
     result = searchCandies('S', 4);
     console.log(result);
-    expect(result).toEqual[ 'Skitties', 'Skittles' ];
+    expect(result).toEqual([ 'Skitties', 'Skittles' ]);
   });
 
   it('takes a lowercase string and a high value max price integer', () => {
     result = searchCandies('ma', 10);
     console.log(result);
-    expect(result).toEqual[ 'Mars', 'Maltesers' ];
+    expect(result).toEqual([ 'Mars', 'Maltesers' ]);
   });
 
 });
